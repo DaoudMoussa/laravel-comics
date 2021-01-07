@@ -28,4 +28,25 @@ body {
 .container {
     max-width: 1228px;
     margin: auto;
+
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid $mainColor;
+    background-color: $mainColor;
+    font-family: $secondaryFont;
+    transition: background-color 0.3s;
 }
