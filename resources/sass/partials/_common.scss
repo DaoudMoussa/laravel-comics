@@ -1,1 +1,31 @@
-//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $mainFont;
+
+    & > div {
+        display: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $secondaryFont;
+    }
+
+    .uc {
+        text-transform: uppercase;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.container {
+    max-width: 1228px;
+    margin: auto;
+}
