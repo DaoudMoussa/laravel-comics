@@ -47,6 +47,20 @@ body a {
   transition: background-color 0.3s;
 }
 
+.dark-bg-section {
+  background-color: #303030;
+  color: white;
+}
+
+.jumbo {
+  padding: 200px 0;
+  background-size: cover;
+  background-position: top;
+}
+.jumbo.teen-titans {
+  background-image: url("./../images/jumbotron.jpg");
+}
+
 header ul {
   list-style-type: none;
 }
@@ -106,6 +120,65 @@ header .bottom-header .nav-container .searchbar input {
   border: none;
   outline: none;
   display: inline-block;
+}
+
+main #comic-section h2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0182f9;
+  transform: translateY(-50%);
+}
+main #comic-section .comics-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main #comic-section .comics-list .comic-card {
+  display: inline-block;
+  flex-basis: calc(100% / 6);
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+main #comic-section .comics-list .comic-card .poster-container {
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+main #comic-section .comics-list .comic-card .poster-container img {
+  width: 100%;
+}
+main #comic-section .comics-list .comic-card p {
+  font-size: 12.8px;
+}
+main #comic-section .button-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main #products-ad {
+  background-color: #0182f9;
+  color: white;
+  padding: 40px 0;
+}
+main #products-ad .products-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main #products-ad .products-list .product {
+  display: flex;
+  align-items: center;
+}
+main #products-ad .products-list .product img:not(.horizontal) {
+  height: 50px;
+}
+main #products-ad .products-list .product .horizontal {
+  width: 50px;
+}
+main #products-ad .products-list .product p {
+  margin-left: 10px;
+  font-size: 14.4px;
+  font-weight: 600;
 }
 
 footer .top-footer {

@@ -50,3 +50,18 @@ body {
     font-family: $secondaryFont;
     transition: background-color 0.3s;
 }
+
+.dark-bg-section {
+    background-color: $darkBg;
+    color: white;
+}
+
+.jumbo {
+    padding: 200px 0;
+    background-size: cover;
+    background-position: top;
+
+    &.teen-titans {
+        background-image: url('./../images/jumbotron.jpg');
+    }
+}
