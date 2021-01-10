@@ -19332,6 +19332,43 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+console.log(window);
+var lastScrollDirectionChange = window.scrollY;
+var scrolledDown = true;
+var lastScrollY = 0;
+
+document.onscroll = function () {
+  var bHeader = document.getElementsByClassName('bottom-header')[0];
+  var main = document.getElementsByTagName('main')[0];
+
+  if (window.scrollY > 32) {
+    bHeader.classList.add('fixed');
+    main.classList.add('header-padding');
+  } else {
+    bHeader.classList.remove('fixed');
+    main.classList.remove('header-padding');
+  }
+
+  var scrollDifference = window.scrollY - lastScrollDirectionChange;
+  console.log(scrollDifference);
+
+  if (scrollDifference >= 70) {
+    bHeader.classList.add('hidden');
+  } else if (scrollDifference < -70) {
+    bHeader.classList.remove('hidden');
+  }
+
+  if (window.scrollY > lastScrollY && !scrolledDown) {
+    lastScrollDirectionChange = window.scrollY;
+    scrolledDown = true;
+  } else if (window.scrollY < lastScrollY && scrolledDown) {
+    lastScrollDirectionChange = window.scrollY;
+    scrolledDown = false;
+  }
+
+  lastScrollY = window.scrollY;
+};
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

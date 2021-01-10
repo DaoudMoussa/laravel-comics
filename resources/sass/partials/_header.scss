@@ -24,6 +24,9 @@ header {
 
     .bottom-header {
         border-bottom: 1px solid rgb(235, 235, 235);
+        background-color: white;
+        width: 100%;
+
 
         .nav-container {
             display: flex;
@@ -76,5 +79,17 @@ header {
                 }
             }
         }
+
+        &.fixed {
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            transition: top 0.5s;
+
+            &.hidden {
+                top: -200px;
+            }
+        }
+
     }
 }

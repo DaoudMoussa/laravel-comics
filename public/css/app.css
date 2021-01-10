@@ -26,6 +26,9 @@ body a {
   max-width: 1228px;
   margin: auto;
 }
+.container.small {
+  max-width: 992px;
+}
 .container::after {
   content: "";
   display: table;
@@ -81,6 +84,8 @@ header .top-header a {
 }
 header .bottom-header {
   border-bottom: 1px solid #ebebeb;
+  background-color: white;
+  width: 100%;
 }
 header .bottom-header .nav-container {
   display: flex;
@@ -120,6 +125,15 @@ header .bottom-header .nav-container .searchbar input {
   border: none;
   outline: none;
   display: inline-block;
+}
+header .bottom-header.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: top 0.5s;
+}
+header .bottom-header.fixed.hidden {
+  top: -200px;
 }
 
 main #comic-section h2 {
@@ -179,6 +193,104 @@ main #products-ad .products-list .product p {
   margin-left: 10px;
   font-size: 14.4px;
   font-weight: 600;
+}
+main.header-padding {
+  padding-top: 121.6px;
+}
+main #intestation {
+  padding: 30px 0;
+  background: #0182f9;
+  position: relative;
+}
+main #intestation .poster-container {
+  display: inline-block;
+  position: absolute;
+  border: 1px solid white;
+  bottom: 20px;
+}
+main #intestation .poster-container div {
+  position: absolute;
+  background: #01a9da;
+  color: white;
+  font-size: 12.8px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+main #intestation .poster-container img {
+  display: block;
+}
+main #intestation .poster-container .comic-type {
+  top: 0;
+  left: 0;
+  padding: 2px;
+}
+main #intestation .poster-container .gallery {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+main #comic-main-info {
+  padding: 50px;
+}
+main #comic-main-info .container > div {
+  float: left;
+}
+main #comic-main-info .content-container {
+  width: calc(2 * 100% / 3);
+}
+main #comic-main-info .content-container h2 {
+  color: #003f5e;
+  font-size: 32px;
+}
+main #comic-main-info .content-container .availability-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: #55ba5a;
+  border: 1px solid #357739;
+  margin: 20px 0;
+}
+main #comic-main-info .content-container .availability-info .price {
+  padding: 0 20px;
+  opacity: 0.8;
+  flex-grow: 1;
+}
+main #comic-main-info .content-container .availability-info .price span {
+  opacity: 1;
+}
+main #comic-main-info .content-container .availability-info .availability-status {
+  padding: 10px;
+  opacity: 0.8;
+  border-right: 1px solid #357739;
+}
+main #comic-main-info .content-container .availability-info .placing {
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 14.4px;
+}
+main #comic-main-info .content-container .availability-info .placing::after {
+  content: "\25BC";
+  font-size: 11.2px;
+}
+main #comic-main-info .content-container p {
+  font-size: 13.6px;
+  color: #959595;
+  font-weight: 600px;
+  line-height: 1.7;
+}
+main #comic-main-info .ad-container {
+  width: calc(100% / 3);
+  position: relative;
+  text-align: right;
+}
+main #comic-main-info .ad-container h5 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  color: #959595;
 }
 
 footer .top-footer {

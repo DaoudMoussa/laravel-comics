@@ -18,5 +18,17 @@ Route::get('/', function () {
     $data = [
         'comics' => $comics
     ];
+    
     return view('home', $data);
 }) -> name('Home');
+
+
+Route::get('/comic/{id}', function ($id) {
+    $comics = config('comics');
+    $comic = $comics[$id];
+    $data = [
+        'comic' => $comic
+    ];
+
+    return view('selected-comic', $data);
+}) -> name('selected-comic');

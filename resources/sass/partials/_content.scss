@@ -73,4 +73,123 @@ main {
             }
         }
     }
+
+    &.header-padding {
+        padding-top: 121.6px;
+    }
+
+    #intestation {
+        padding: 30px 0;
+        background: $mainColor;
+        position: relative;
+
+        .poster-container {
+            display: inline-block;
+            position: absolute;
+            border: 1px solid white;
+            bottom: 20px;
+
+            div {
+                position: absolute;
+                background: $mainColorLighter;
+                color: white;
+                font-size: $baseFontSize * 0.8;
+                font-family: $secondaryFont;
+            }
+
+            img {
+                display: block;
+            }
+
+            .comic-type {
+                top: 0;
+                left: 0;
+                padding: 2px;
+            }
+
+            .gallery {
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    #comic-main-info {
+        padding: 50px;
+
+        .container > div {
+            float: left;
+        }
+
+        .content-container {
+            width: calc(2 * 100% / 3);
+
+            h2 {
+                color: $titleColor;
+                font-size: $baseFontSize * 2;
+            }
+
+            .availability-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+                font-family: $secondaryFont;
+                background-color: #55ba5a;
+                border: 1px solid #357739;
+                margin: 20px 0;
+
+                .price {
+                    padding: 0 20px;
+                    opacity: 0.8;
+                    flex-grow: 1;
+
+                    span {
+                        opacity: 1;
+                    }
+                }
+
+                .availability-status {
+                    padding: 10px;
+                    opacity: 0.8;
+                    border-right: 1px solid #357739;
+                }
+
+                .placing {
+                    padding-left: 10px;
+                    padding-right: 20px;
+                    font-size: $baseFontSize*0.9;
+                    &::after {
+                        content: '\25BC';
+                        font-size: $baseFontSize*0.7;
+                    }
+                }
+            }
+
+            p {
+                font-size: $baseFontSize * 0.85;
+                color: $footerLinksColor;
+                font-weight: 600px;
+                line-height: 1.7;
+            }
+
+
+        }
+
+        .ad-container {
+            width: calc(100% / 3);
+            position: relative;
+            text-align: right;
+
+            h5 {
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: translateY(-100%);
+                color: $footerLinksColor;
+            }
+        }
+    }
 }

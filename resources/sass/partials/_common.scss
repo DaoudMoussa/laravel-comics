@@ -29,6 +29,10 @@ body {
     max-width: 1228px;
     margin: auto;
 
+    &.small {
+        max-width: 992px;
+    }
+    
     &::after {
         content: '';
         display: table;
