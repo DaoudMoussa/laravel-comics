@@ -292,6 +292,131 @@ main #comic-main-info .ad-container h5 {
   transform: translateY(-100%);
   color: #959595;
 }
+main #comic-infos {
+  padding-top: 20px;
+  background-color: #F6F6F6;
+  border-top: 1px solid #DDD;
+}
+main #comic-infos .list-container {
+  display: flex;
+  justify-content: space-between;
+}
+main #comic-infos .list-container ul {
+  flex-basis: 50%;
+  padding-right: 15px;
+  list-style-type: none;
+  padding-bottom: 100px;
+}
+main #comic-infos .list-container ul li {
+  border-bottom: 1px solid #e3e3e3;
+}
+main #comic-infos .list-container ul li h3 {
+  margin: 20px 0;
+}
+main #comic-infos .list-container ul li h3, main #comic-infos .list-container ul li h5 {
+  color: #003f5e;
+}
+main #comic-infos .list-container ul li:not(:first-child) {
+  border-top: 1px solid white;
+  padding: 10px 0;
+  font-size: 14.4px;
+}
+main #comic-infos .list-container ul li:not(:first-child) h5 {
+  float: left;
+  width: calc(100% / 3);
+  font-size: 14.4px;
+}
+main #comic-infos .list-container ul li:not(:first-child) p {
+  float: left;
+  width: 66.6666666667%;
+}
+main #comic-infos .list-container ul li:not(:first-child) p a {
+  color: #01a9da;
+}
+main #comic-infos .list-container ul li:not(:first-child) p a:hover {
+  text-decoration: underline;
+}
+main #comic-infos .list-container ul:last-child {
+  padding-right: 0;
+  padding-left: 15px;
+}
+main #products {
+  border-top: 1px solid #ddd;
+}
+main #products ul {
+  list-style-type: none;
+}
+main #products ul li {
+  float: left;
+  width: 25%;
+  border-left: 1px solid #ddd;
+}
+main #products ul li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+main #products ul li a span {
+  color: #959595;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+main #products ul li a .img-box {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-image: url("/images/cta-icons.png");
+}
+main #products ul li:last-child {
+  border-right: 1px solid #ddd;
+}
+main #products ul li:nth-child(1) .img-box {
+  background-position: 0px 0;
+}
+main #products ul li:nth-child(1) a:hover {
+  background-color: #ddd;
+}
+main #products ul li:nth-child(1) a:hover .img-box {
+  background-position: 0px 37px;
+}
+main #products ul li:nth-child(1) a:hover span {
+  color: #003f5e;
+}
+main #products ul li:nth-child(2) .img-box {
+  background-position: 37px 0;
+}
+main #products ul li:nth-child(2) a:hover {
+  background-color: #ddd;
+}
+main #products ul li:nth-child(2) a:hover .img-box {
+  background-position: 37px 37px;
+}
+main #products ul li:nth-child(2) a:hover span {
+  color: #003f5e;
+}
+main #products ul li:nth-child(3) .img-box {
+  background-position: 74px 0;
+}
+main #products ul li:nth-child(3) a:hover {
+  background-color: #ddd;
+}
+main #products ul li:nth-child(3) a:hover .img-box {
+  background-position: 74px 37px;
+}
+main #products ul li:nth-child(3) a:hover span {
+  color: #003f5e;
+}
+main #products ul li:nth-child(4) .img-box {
+  background-position: 111px 0;
+}
+main #products ul li:nth-child(4) a:hover {
+  background-color: #ddd;
+}
+main #products ul li:nth-child(4) a:hover .img-box {
+  background-position: 111px 37px;
+}
+main #products ul li:nth-child(4) a:hover span {
+  color: #003f5e;
+}
 
 footer .top-footer {
   background-image: url("./../images/footer-bg.jpg");
